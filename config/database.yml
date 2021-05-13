@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch('POSTGRES_USER', 'orcheya') %>
+  password: <%= ENV.fetch('POSTGRES_PASSWORD', 'qwerty') %>
+  host: <%= ENV.fetch('POSTGRES_HOST', 'localhost') %>
+  port: <%= ENV.fetch('POSTGRES_PORT', 5432) %>
+
+production:
+  <<: *default
+  database: <%= ENV.fetch('POSTGRES_DB', 'orcheya_production') %>
+
+staging:
+  <<: *default
+  database: <%= ENV.fetch('POSTGRES_DB', 'orcheya_staging') %>
+
+demo:
+  <<: *default
+  database: <%= ENV.fetch('POSTGRES_DB', 'orcheya_demo') %>
+
+development:
+  <<: *default
+  database: <%= ENV.fetch('POSTGRES_DB', 'orcheya_development') %>
+
+test:
+  <<: *default
+  database: <%= ENV.fetch('POSTGRES_DB', 'orcheya_test') %>

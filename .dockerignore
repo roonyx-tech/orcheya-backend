@@ -1,0 +1,4 @@
+!/vendor/bundle/.keep
+/vendor/bundle/*
+*_history
+**/*.key

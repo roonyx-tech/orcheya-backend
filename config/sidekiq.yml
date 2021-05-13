@@ -1,0 +1,6 @@
+:queues:
+  - default
+  - worklogs
+  - mailers
+
+:concurrency: 5

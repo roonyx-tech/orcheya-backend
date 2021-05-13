@@ -1,0 +1,2 @@
+Привет, <%= options.event.user.name %>. Тебе одобрили отпуск на <%= options.event.days %> дней (с <%= I18n.l options.event.started_at.to_date, format: :short %> по <%= I18n.l options.event.ended_at.to_date, format: :short %>)
+Хорошего отдыха! Отпуск был согласован <%= options.event.assignee.full_name %>

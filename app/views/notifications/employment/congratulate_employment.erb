@@ -1,0 +1,4 @@
+🎉 Поздравляем с годовщиной работы в Roonyx: 🎉
+<% @users.each do |user| %>
+  <%= user.full_name %> с нами уже <%= I18n.t 'datetime.distance_in_words.x_years', count: Date.current.year - user.employment_at.year, locale: :ru %> (<%= I18n.l user.employment_at, format: :short %>)
+<% end %>

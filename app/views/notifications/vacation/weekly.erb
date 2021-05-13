@@ -1,0 +1,7 @@
+Ближайшие отпуска: <% @vacations.each do |vacation| %>
+  <% if vacation.started_at.to_date < Date.current %>
+    <%= vacation.user.full_name %> в отпуске до <%= I18n.l vacation.ended_at.to_date, format: :short %>
+  <% else %>
+    <%= vacation.user.full_name %> запланирован c <%= I18n.l vacation.started_at.to_date, format: :short %> до <%= I18n.l vacation.ended_at.to_date, format: :short %>
+  <% end %>
+<% end %>

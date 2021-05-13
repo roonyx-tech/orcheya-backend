@@ -1,0 +1,10 @@
+<% if @vacations[:tomorrow].present? %>
+  <% @vacations[:tomorrow].each do |vacation| %>
+    <%= vacation.user.full_name %> уходит в отпуск уже завтра. Даты отпуска: <%= vacation.started_at.to_date %> - <%= vacation.ended_at.to_date %>
+  <% end %>
+<% end %>
+<% if @vacations[:next_week].present? %>
+  <% @vacations[:next_week].each do |vacation| %>
+    <%= vacation.user.full_name %> уходит в отпуск через неделю. Даты отпуска: <%= vacation.started_at.to_date %> - <%= vacation.ended_at.to_date %>
+  <% end %>
+<% end %>

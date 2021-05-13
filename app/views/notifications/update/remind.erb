@@ -1,0 +1,7 @@
+<% if options.attempt.eql? 'first' %>
+Рабочий день подходит к концу. Напиши, пожалуйста, статус по задачам: <%= link "update?date=#{options.date}"%>
+<% elsif options.attempt.eql? 'second' %>
+<%= recipient.name %>, не забудь написать статус по задачам: <%= link "update?date=#{options.date}"%>
+<% else %>
+<%= recipient.name %>, напиши апдейт 🙏: <%= link "update?date=#{options.date}"%>
+<% end %>

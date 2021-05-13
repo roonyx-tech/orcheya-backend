@@ -1,0 +1,13 @@
+**Количество отработавших 35 часов и более:** <%= @data[:min_worked_count] %>
+**Количество отработавших 40 часов:** <%= @data[:max_worked_users].count %>
+**Список героев, отработавших 40 часов:**
+<% @data[:max_worked_users].each do |user| %>
+ - <%= user.full_name %>
+<% end %>
+<%= "\n" %>
+**Количество не отработавших свою норму времени:** <%= @data[:not_enough_users].count %>
+**Список не отработавших свою норму времени:**
+<% @data[:not_enough_users].each do |user| %>
+  - <%= user.full_name %>
+<% end %>
+<%= "\n" %>

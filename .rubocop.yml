@@ -1,0 +1,58 @@
+Rails:
+  Enabled: true
+
+Documentation:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'Rakefile'
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'services/tasks/*'
+    - 'vendor/**/*'
+    - 'env/vendor/**/*'
+    - 'lib/tasks/**/*'
+    - 'spec/rails_helper.rb'
+    - 'lib/capistrano/tasks/**/*'
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Metrics/LineLength:
+  Max: 120
+  IgnoredPatterns: ['(\A|\s)#']
+
+Metrics/ClassLength:
+  Exclude:
+    - 'app/models/user.rb'
+    - 'app/controllers/admin/users_controller.rb'
+
+Metrics/AbcSize:
+  Max: 25
+  Exclude:
+    - 'app/models/events/vacation.rb'
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 20
+
+Metrics/ParameterLists:
+  Max: 6
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - demo
+    - staging

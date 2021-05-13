@@ -1,0 +1,8 @@
+<%= fetch(:rails_env) %>:
+  adapter: postgresql
+  database: <%= fetch(:db_name, 'orcheya') %>
+  username: deploy
+  encoding: unicode
+  pool: 5
+  host: ''
+  port: 5432

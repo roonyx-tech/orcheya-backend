@@ -1,0 +1,7 @@
+Привет, <%= options.event.user.full_name %>. К сожалению, отпуск с <%= I18n.l options.event.started_at.to_date, format: :short %> по <%= I18n.l options.event.ended_at.to_date, format: :short %> не одобрен.
+Нам нужны твои лапки)
+
+Причина:
+```
+<%= options.event.description %>
+```

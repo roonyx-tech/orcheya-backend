@@ -1,0 +1,9 @@
+Всем привет! Через неделю праздник.
+
+<% @in_a_week_events.each do |event| %>
+  <%= "**#{event.title}** \n" %>
+  <%= "#{event.description} \n" %>
+  <% start_date = event.started_at.to_date %>
+  <% end_date = event.ended_at.to_date %>
+  <%= start_date == end_date ? "#{start_date} \n" : "#{start_date} - #{end_date} \n\n" %>
+<% end %>

@@ -1,0 +1,9 @@
+difficulty_levels:
+  - title: Easy
+    value: 3
+
+  - title: Middle
+    value: 5
+
+  - title: Hard
+    value: 7

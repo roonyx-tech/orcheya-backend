@@ -1,0 +1,5 @@
+**Перечень отпусков на ближайшие 30 дней**:
+<% @vacations.each do |vacation| %>
+  <%= vacation.user.full_name %>: отпуск с <%= vacation.started_at.to_date %> по <%= vacation.ended_at.to_date %>
+<% end %>
+<%= "\n" %>

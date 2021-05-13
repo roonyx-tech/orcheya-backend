@@ -1,0 +1,4 @@
+Скоро день рождения:
+<% @users.each do |user| %>
+  <%= user.full_name %> - <%= Date.current.year - user.birthday.year %> (<%= I18n.l user.birthday, format: :short %>)
+<% end %>

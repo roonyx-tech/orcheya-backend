@@ -1,0 +1,41 @@
+admin:
+  title: 'Admin tools'
+  description: 'Admin tools'
+  actions:
+    super_admin: 'Manage super-admin pages'
+    roles: 'Manage roles and permissions'
+    skills: 'Manage skills'
+    achievements: 'Manage achievements'
+    english_level: 'Can set users english level'
+    faq: 'Allow access to edit FAQ'
+calendar:
+  title: 'Calendar'
+  description: 'Calendar tools'
+  actions:
+    holidays: 'Manage holidays'
+    vacation: 'Manage vacation (Approve / Disapprove)'
+    manage_all: 'Can manage all users event'
+projects:
+  title: 'Projects'
+  description: 'Project permissions'
+  actions:
+    participant: 'Can be a participant of a project (Developer, Designer, QA and so on)'
+    planning: 'Resource and people planning of a project'
+    timer: 'User works by timer'
+users:
+  title: 'Users'
+  description: 'Users management'
+  actions:
+    crud: 'CRUD users'
+    count: 'Count users by year for every month'
+notifications:
+  title: 'Notifications'
+  description: 'Notifications'
+  actions:
+    pm_remind: 'Get developers status remind (project ends in a day / in a week)'
+    sales_monday: 'Get free developers list on monday (Sales)'
+    pm_friday: 'Get free developers list on friday (PM)'
+    pm_monday: 'Get users timesheet week report on monday (PM)'
+    remind_update: 'Get a daily update reminder'
+    skills_update: 'Get a notification when skill was updated'
+    users_without_projects: 'Get list of developers without project daily'
