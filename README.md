@@ -1,4 +1,6 @@
 # Orcheya
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Froonyx-tech%2Forcheya-backend.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Froonyx-tech%2Forcheya-backend?ref=badge_shield)
+
 
 ## Get started with docker
 
@@ -142,3 +144,7 @@ docker attach orcheya_orcheya_1
 ## Documentation
 
 [Ruby style guide](https://github.com/bbatsov/ruby-style-guide)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Froonyx-tech%2Forcheya-backend.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Froonyx-tech%2Forcheya-backend?ref=badge_large)
